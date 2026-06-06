@@ -12,7 +12,6 @@ fonts:
   sans: Open Sans
   mono: Source Code Pro
 ---
----
 layout: cover
 subtitle: Specialistka informační bezpečnosti
 author: Ondřej Šrámek
@@ -26,9 +25,9 @@ image: /ondrej.png
 name: "Ondřej Šrámek"
 subtitle: "GMON, GNFA, GCTI"
 ---
-- Worked in the public sector and commercial sector
-- 13+ years in the field, primarily Incident Response, DFIR, Threat Hunting and Threat Intelligence
-- Security lecturer at Czechitas
+- Pracoval ve veřejném a soukromém sektoru
+- 13+ let v oboru, především Incident Response, DFIR, Threat Hunting a Threat Intelligence
+- Lektor bezpečnosti na Czechitas
 ::qr::
 <QRCode url="https://linktr.ee/ondrejsramek" :size="120">Linktree</QRCode>
 
