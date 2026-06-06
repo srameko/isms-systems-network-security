@@ -3,7 +3,7 @@ theme: ./theme
 title: Bezpečnost systémů a sítí
 info: ISO 27001 — 8.7, 8.20, 8.21, 8.22, 8.23, 8.32, PAM, Segregation
 author: Ondřej Šrámek
-date: January 2026
+date: 2026
 mdc: true
 shiki:
   theme: github-light
