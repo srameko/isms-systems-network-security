@@ -81,6 +81,6 @@ layout: center
 
 Ondřej Šrámek
 
-**Czechitas · Specialistka informační bezpečnosti · January 2025**
+**Czechitas · Specialistka informační bezpečnosti · January 2026**
 
 [linktr.ee/ondrejsramek](https://linktr.ee/ondrejsramek)

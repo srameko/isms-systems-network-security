@@ -3,7 +3,7 @@ theme: ./theme
 title: Bezpečnost systémů a sítí
 info: ISO 27001 — 8.7, 8.20, 8.21, 8.22, 8.23, 8.32, PAM, Segregation
 author: Ondřej Šrámek
-date: January 2025
+date: January 2026
 mdc: true
 shiki:
   theme: github-light
@@ -11,12 +11,8 @@ favicon: /favicon.png
 fonts:
   sans: Open Sans
   mono: Source Code Pro
----
----
 layout: cover
 subtitle: Specialistka informační bezpečnosti
-author: Ondřej Šrámek
-date: January 2025
 ---
 # Bezpečnost systémů a sítí
 
