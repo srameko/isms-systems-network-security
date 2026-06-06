@@ -12,7 +12,6 @@ fonts:
   sans: Open Sans
   mono: Source Code Pro
 ---
-
 ---
 layout: cover
 subtitle: Specialistka informační bezpečnosti
