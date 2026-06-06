@@ -1,12 +1,12 @@
-# Systems and Network Security
+# Bezpečnost systémů a sítí
 
-This presentation covers key ISO 27001 controls for systems and network security: malware protection, network segmentation and segregation, web filtering, change management, privileged access management (PAM), and separation of development, test, and production environments. It is part of the Czechitas Digital Academy: Cybersecurity course.
+Tato prezentace pokrývá klíčová opatření ISO 27001 pro bezpečnost systémů a sítí: ochranu před malwarem, segmentaci a oddělení sítí, webové filtrování, správu změn, správu privilegovaného přístupu (PAM) a oddělení vývojového, testovacího a produkčního prostředí. Je součástí kurzu Czechitas Specialistka informační bezpečnosti.
 
-## Slides
+## Prezentace
 
-Latest version available online:
+Nejnovější verze dostupná online:
 https://srameko.github.io/isms-systems-network-security/
 
-## Download PDF
+## Stažení PDF
 
 [isms-systems-network-security.pdf](https://srameko.github.io/isms-systems-network-security/isms-systems-network-security.pdf)
