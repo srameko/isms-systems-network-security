@@ -2,32 +2,32 @@
 layout: default
 ---
 
-# What's on Today's Agenda?
+# Co nás čeká dnes?
 
 <div class="icon-grid">
   <div class="icon-card">
     <div class="icon">🛡️</div>
-    <div class="label">8.7 Protection against malware</div>
+    <div class="label">8.7 Ochrana před malwarem</div>
   </div>
   <div class="icon-card">
     <div class="icon">🌐</div>
-    <div class="label">8.20 Network Security</div>
+    <div class="label">8.20 Bezpečnost sítí</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔌</div>
-    <div class="label">8.21 Security of network services</div>
+    <div class="label">8.21 Bezpečnost síťových služeb</div>
   </div>
   <div class="icon-card">
     <div class="icon">🗂️</div>
-    <div class="label">8.22 Segregation of networks</div>
+    <div class="label">8.22 Segmentace sítí</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔍</div>
-    <div class="label">8.23 Web filtering</div>
+    <div class="label">8.23 Webové filtrování</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔄</div>
-    <div class="label">8.32 Change Management</div>
+    <div class="label">8.32 Správa změn</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔑</div>
@@ -35,10 +35,10 @@ layout: default
   </div>
   <div class="icon-card">
     <div class="icon">🏗️</div>
-    <div class="label">Dev / Test / Prod Separation</div>
+    <div class="label">Oddělení vývojového, testovacího a produkčního prostředí</div>
   </div>
   <div class="icon-card">
     <div class="icon">💬</div>
-    <div class="label">Q&A and Discussion</div>
+    <div class="label">Otázky a diskuse</div>
   </div>
 </div>

@@ -2,38 +2,38 @@
 layout: section
 ---
 
-# Summary and Q&A
+# Shrnutí a otázky
 
 ---
 layout: default
 ---
 
-# Summary
+# Shrnutí
 
 <div class="icon-grid">
   <div class="icon-card">
     <div class="icon">🛡️</div>
-    <div class="label">Malware protection is essential — layered defence wins</div>
+    <div class="label">Ochrana před malwarem je nezbytná — vrstvená obrana vítězí</div>
   </div>
   <div class="icon-card">
     <div class="icon">🗂️</div>
-    <div class="label">Segment your network — contain blast radius</div>
+    <div class="label">Segmentujte síť — omezte rozsah dopadu útoku</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔍</div>
-    <div class="label">Regulate and control internet access from corporate network</div>
+    <div class="label">Regulujte a kontrolujte přístup k internetu z firemní sítě</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔄</div>
-    <div class="label">Change management prevents self-inflicted outages</div>
+    <div class="label">Správa změn předchází samovolným výpadkům</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔑</div>
-    <div class="label">PAM — least privilege, JIT, MFA, session logging</div>
+    <div class="label">PAM — nejnižší oprávnění, JIT, MFA, nahrávání relací</div>
   </div>
   <div class="icon-card">
     <div class="icon">🏗️</div>
-    <div class="label">Keep dev/test/prod separated — especially the data</div>
+    <div class="label">Oddělujte dev/test/prod — zejména co se týče dat</div>
   </div>
 </div>
 
@@ -41,34 +41,34 @@ layout: default
 layout: default
 ---
 
-# Possible Junior Role Responsibilities
+# Možné odpovědnosti na juniorní pozici
 
-What a junior security specialist might work on in this area:
+Co může juniorní specialista/ka informační bezpečnosti dělat v této oblasti:
 
-- Discuss ISO 27001 requirements on network/cloud security with DevOps
-- Review current security configurations against best practices
-- Identify websites that are not yet blocked but should be
-- Compare current web filtering setup against best practices
-- Proper categorisation in web filtering
+- Diskutovat s DevOps o požadavcích ISO 27001 na bezpečnost sítí a cloudu
+- Revidovat aktuální bezpečnostní konfigurace vůči best practices
+- Identifikovat weby, které ještě nejsou blokovány, ale měly by být
+- Porovnat aktuální nastavení webového filtrování s best practices
+- Správná kategorizace ve webovém filtrování
 
 ---
 layout: default
 ---
 
-# Resources
+# Zdroje
 
-| Topic | Resource |
-|-------|----------|
-| AV vs EDR | What is the difference between AV and EDR? |
-| JIT elevation | Just-in-time elevation in CyberArk (PAM) |
-| Zero Trust | Zero Trust from the ZScaler perspective |
-| Web filtering | URL/Web filtering from the ZScaler perspective |
+| Téma | Zdroj |
+|------|-------|
+| AV vs EDR | Jaký je rozdíl mezi AV a EDR? |
+| JIT elevation | Just-in-time elevation v CyberArk (PAM) |
+| Zero Trust | Zero Trust z pohledu ZScaler |
+| Webové filtrování | URL/Web filtering z pohledu ZScaler |
 
 ---
 layout: center
 ---
 
-# Feedback
+# Zpětná vazba
 
 <!-- TODO: Replace URL with the actual feedback form link -->
 <QRCode url="https://FEEDBACK_FORM_URL" :size="200">Feedback form</QRCode>
@@ -77,10 +77,10 @@ layout: center
 layout: center
 ---
 
-# Thank You for Your Attention!
+# Děkuji za pozornost!
 
 Ondřej Šrámek
 
-**Czechitas · Digital Academy: Cybersecurity · January 2025**
+**Czechitas · Specialistka informační bezpečnosti · January 2025**
 
 [linktr.ee/ondrejsramek](https://linktr.ee/ondrejsramek)

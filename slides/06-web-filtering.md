@@ -1,68 +1,68 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.23
+subtitle: ISO 27001 — Opatření 8.23
 ---
 
-# Web Filtering
+# Webové filtrování
 
 ---
 layout: default
 ---
 
-# 8.23 Motivation
+# 8.23 Motivace
 
 <div class="callout warning">
-The web browser is one of the most common attack vectors — users click faster than the security team can react.
+Webový prohlížeč je jedním z nejčastějších vektorů útoku — uživatelé klikají rychleji, než bezpečnostní tým stačí reagovat.
 </div>
 
-**Web filtering:**
-- Reduces the risk of human error
-- Blocks attacks **before they land**
+**Webové filtrování:**
+- Snižuje riziko lidské chyby
+- Blokuje útoky **dříve, než se projeví**
 
-**Security vs. Privacy tension:**
-- The security team can see all URLs a user visits
-- Same challenge as with email monitoring
+**Napětí mezi bezpečností a soukromím:**
+- Bezpečnostní tým vidí všechny URL, které uživatel navštěvuje
+- Stejná výzva jako u monitorování e-mailů
 
 ---
 layout: default
 ---
 
-# 8.23 Web Filtering
+# 8.23 Webové filtrování
 
 <div class="callout">
-Web filtering doesn't restrict users — it protects the organisation from the most common internet-based attacks. It's one of the most effective preventive controls.
+Webové filtrování neomezuje uživatele — chrání organizaci před nejčastějšími útoky z internetu. Je to jedno z nejefektivnějších preventivních opatření.
 </div>
 
-**Scope:**
-- Governs and limits access to websites
-- Protects against malware, phishing, malicious and inappropriate content
+**Rozsah:**
+- Řídí a omezuje přístup na webové stránky
+- Chrání před malwarem, phishingem, škodlivým a nevhodným obsahem
 
 ---
 layout: default
 ---
 
-# 8.23 Common Filter Categories
+# 8.23 Běžné kategorie filtrů
 
 <div class="icon-grid">
   <div class="icon-card">
     <div class="icon">☠️</div>
-    <div class="label">Malicious sites (hosting harmful content)</div>
+    <div class="label">Škodlivé weby (hostující škodlivý obsah)</div>
   </div>
   <div class="icon-card">
     <div class="icon">🎣</div>
-    <div class="label">Phishing sites</div>
+    <div class="label">Phishingové weby</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔞</div>
-    <div class="label">Undesirable categories (weapons, drugs, pornography)</div>
+    <div class="label">Nežádoucí kategorie (zbraně, drogy, pornografie)</div>
   </div>
   <div class="icon-card">
     <div class="icon">🏴‍☠️</div>
-    <div class="label">Pirated content</div>
+    <div class="label">Pirátský obsah</div>
   </div>
   <div class="icon-card">
     <div class="icon">🆕</div>
-    <div class="label">Newly registered / unknown domains (no history)</div>
+    <div class="label">Nově registrované / neznámé domény (bez historie)</div>
   </div>
 </div>
 
@@ -70,52 +70,52 @@ layout: default
 layout: default
 ---
 
-# 8.23 Related Controls
+# 8.23 Související opatření
 
-Web filtering connects to:
+Webové filtrování se váže na:
 
-| Control | Description |
-|---------|-------------|
-| **8.7** | Malware protection |
-| **8.22** | Segregation of networks |
-| **6.3** | Awareness & training |
-| **8.16** | Monitoring activities |
+| Opatření | Popis |
+|----------|-------|
+| **8.7** | Ochrana před malwarem |
+| **8.22** | Segmentace sítí |
+| **6.3** | Osvěta a školení |
+| **8.16** | Monitorování aktivit |
 
-Web filtering is both a **technical and preventive** control.
-It can be part of a firewall solution or a **dedicated service**.
-
----
-layout: default
----
-
-# 8.23 Metrics
-
-- Percentage of total traffic that is **blocked**
-- Which **categories** appear most frequently
-- Which specific **sites** are most accessed (today especially AI — data leakage concerns)
-- Categories that appear **very rarely**
-- How many URLs must be **manually added** (typically phishing or new malicious sites)
+Webové filtrování je **technické i preventivní** opatření.
+Může být součástí firewallového řešení nebo **samostatné služby**.
 
 ---
 layout: default
 ---
 
-# 8.23 Common Problems
+# 8.23 Metriky
+
+- Procento celkového provozu, který je **blokován**
+- Které **kategorie** se objevují nejčastěji
+- Které konkrétní **weby** jsou nejnavštěvovanější (dnes zejména AI — riziko úniku dat)
+- Kategorie, které se objevují **velmi zřídka**
+- Kolik URL je nutné **ručně přidat** (typicky phishing nebo nové škodlivé weby)
+
+---
+layout: default
+---
+
+# 8.23 Časté problémy
 
 <div class="callout warning">
-Filter only on known services? New (suspicious) ones won't be in the lists yet — data leakage risk.
+Filtrovat pouze známé služby? Nové (podezřelé) ještě nejsou v seznamech — riziko úniku dat.
 </div>
 
-- **No filtering at all** — anyone can go anywhere
-- Filter covers only known services (e.g. only known AI tools)
-  - New ones (questionable) not yet in filter lists
-- Missing **granularity:**
-  - HR needs access to site XY
-  - Finance needs access to site AB but not XY
-  - Regular employees should have access to neither AB nor XY
+- **Žádné filtrování vůbec** — kdokoli může jít kamkoli
+- Filtr pokrývá pouze známé služby (např. pouze známé AI nástroje)
+  - Nové (pochybné) ještě nejsou ve filtrovacích seznamech
+- Chybějící **granularita:**
+  - HR potřebuje přístup na web XY
+  - Finance potřebuje přístup na web AB, ale ne XY
+  - Řadoví zaměstnanci by neměli mít přístup ani na AB, ani na XY
 
 ---
 layout: center
 ---
 
-# ☕ Break
+# ☕ Přestávka

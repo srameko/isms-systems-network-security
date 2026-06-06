@@ -1,99 +1,99 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.32
+subtitle: ISO 27001 — Opatření 8.32
 ---
 
-# Change Management
-
----
-layout: default
----
-
-# 8.32 Motivation
-
-Every change to systems, infrastructure, and applications should be **planned, assessed, tested, approved, and documented** to prevent unintentional outages or security weaknesses.
-
-- Partial exceptions exist (e.g. emergency patches)
-- Eliminates **false positives** — security team knows what's happening at all times
+# Správa změn
 
 ---
 layout: default
 ---
 
-# 8.32 Change Management Process
+# 8.32 Motivace
 
-A documented change management procedure exists, covering systems, applications, and infrastructure.
+Každá změna systémů, infrastruktury a aplikací by měla být **plánovaná, posouzená, otestovaná, schválená a zdokumentovaná**, aby se předešlo neúmyslným výpadkům nebo bezpečnostním slabinám.
 
-Changes are **classified** (routine, emergency) with appropriate workflow per type.
-
-All non-trivial changes go through:
-
-1. 📋 Planning
-2. ⚠️ Risk assessment
-3. ✅ Approval
-4. 🧪 Testing
-5. 🚀 Controlled deployment
+- Částečné výjimky existují (např. havarijní záplaty)
+- Eliminuje **falešné poplachy** — bezpečnostní tým ví, co se děje
 
 ---
 layout: default
 ---
 
-# 8.32 Changes in Practice
+# 8.32 Proces správy změn
 
-- Production changes **tested in a separate environment** first
-- Security impact explicitly assessed for relevant changes (including security testing)
-- Emergency changes are still:
-  - Recorded
-  - Authorised (even if via an expedited process)
-  - Reviewed afterwards
+Existuje dokumentovaný postup správy změn pokrývající systémy, aplikace a infrastrukturu.
 
-**Change records must contain:**
-> What was changed · Why · Who made the change · When and where · Outcome (including rollback if used)
+Změny jsou **klasifikovány** (rutinní, havarijní) s příslušným pracovním postupem dle typu.
+
+Všechny netriviální změny procházejí:
+
+1. 📋 Plánování
+2. ⚠️ Posouzení rizik
+3. ✅ Schválení
+4. 🧪 Testování
+5. 🚀 Řízené nasazení
 
 ---
 layout: default
 ---
 
-# 8.32 Workflow and Roles
+# 8.32 Změny v praxi
+
+- Produkční změny **nejdříve testovány v oddělené prostředí**
+- Bezpečnostní dopad je explicitně posouzen pro relevantní změny (včetně bezpečnostního testování)
+- Havarijní změny jsou vždy:
+  - Zaznamenány
+  - Autorizovány (i když zrychleným procesem)
+  - Zpětně přezkoumány
+
+**Záznamy o změnách musí obsahovat:**
+> Co bylo změněno · Proč · Kdo změnu provedl · Kdy a kde · Výsledek (včetně rollbacku, pokud byl použit)
+
+---
+layout: default
+---
+
+# 8.32 Pracovní postup a role
 
 <div class="icon-grid cols-2">
   <div class="icon-card">
     <div class="icon">✍️</div>
-    <div class="label"><strong>Separation of duties</strong><br/>Approver ≠ Implementer — especially for critical systems</div>
+    <div class="label"><strong>Oddělení povinností</strong><br/>Schvalovatel ≠ Realizátor — zejména pro kritické systémy</div>
   </div>
   <div class="icon-card">
     <div class="icon">📊</div>
-    <div class="label"><strong>Metrics-driven improvement</strong><br/>Change success rate · incidents caused by changes · MTTR</div>
+    <div class="label"><strong>Zlepšování na základě metrik</strong><br/>Míra úspěšnosti změn · incidenty způsobené změnami · MTTR</div>
   </div>
 </div>
 
-Patch management follows the **same change process**, scaled to risk level.
+Správa záplat se řídí **stejným procesem správy změn**, upraveným podle úrovně rizika.
 
 ---
 layout: default
 ---
 
-# 8.32 Metrics
+# 8.32 Metriky
 
-| Metric | What it reveals |
-|--------|----------------|
-| Standard vs emergency change ratio | Process maturity |
-| Volume by cadence (monthly/quarterly/yearly) | Planning effectiveness |
-| Failed changes | Process quality and testing coverage |
+| Metrika | Co odhaluje |
+|---------|-------------|
+| Poměr standardních a havarijních změn | Vyspělost procesu |
+| Objem dle kadence (měsíčně/čtvrtletně/ročně) | Efektivita plánování |
+| Neúspěšné změny | Kvalita procesu a pokrytí testováním |
 
 ---
 layout: default
 ---
 
-# 8.32 Common Problems
+# 8.32 Časté problémy
 
 <div class="callout warning">
-Shadow IT and untested changes are the biggest risks
+Shadow IT a netestované změny jsou největšími riziky
 </div>
 
-- No testing before deployment
-- Missing change documentation / evidence
-- Missing or inadequate backups
-- Ignoring updates and patches
-- **Overly rigid process** — people work around it (Shadow IT)
-- Shadow IT altogether
+- Žádné testování před nasazením
+- Chybějící dokumentace / evidence o změnách
+- Chybějící nebo nedostatečné zálohy
+- Ignorování aktualizací a záplat
+- **Příliš rigidní proces** — lidé ho obcházejí (Shadow IT)
+- Shadow IT celkově

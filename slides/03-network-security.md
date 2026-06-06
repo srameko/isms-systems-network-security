@@ -1,115 +1,115 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.20
+subtitle: ISO 27001 — Opatření 8.20
 ---
 
-# Network Security
-
----
-layout: default
----
-
-# 8.20 Network Security
-
-**A documented network security standard exists**, covering:
-
-- Defined **network zones**
-- Allowed **data flows**
-
-The standard must be:
-- Understandable
-- Up to date
-- Actually used in practice
+# Bezpečnost sítí
 
 ---
 layout: default
 ---
 
-# 8.20 Device Hardening
+# 8.20 Bezpečnost sítí
 
-Network devices must be:
+**Existuje dokumentovaný standard síťové bezpečnosti**, který zahrnuje:
 
-| Requirement | Examples |
-|-------------|---------|
-| **Hardened** | Minimal services, secure defaults |
-| **Updated** | Regular patch cycles |
-| **Managed** | Centralised config management |
+- Definované **síťové zóny**
+- Povolené **datové toky**
 
-Applies to **everything with a management interface**:
-Firewalls · Routers · Switches · VPN · Printers · Access Points
-
----
-layout: default
----
-
-# 8.20 Network Access
-
-- Network is divided into **security zones**
-  - Guest · DMZ · ICS/IoT/SCADA
-- Critical systems are:
-  - Isolated
-  - Protected by stricter rules
-- **Device-level authentication** for network access
+Standard musí být:
+- Srozumitelný
+- Aktuální
+- Skutečně používán v praxi
 
 ---
 layout: default
 ---
 
-# 8.20 Remote and Wireless Access
+# 8.20 Hardening zařízení
 
-**Remote Access (VPN)**
-- Multi-Factor Authentication (MFA) and additional security steps
-- Encryption
+Síťová zařízení musí být:
+
+| Požadavek | Příklady |
+|-----------|---------|
+| **Hardenovaná** | Minimální služby, bezpečné výchozí nastavení |
+| **Aktualizovaná** | Pravidelné cykly záplatování |
+| **Spravovaná** | Centralizovaná správa konfigurace |
+
+Platí pro **vše se správcovským rozhraním**:
+Firewally · Routery · Switche · VPN · Tiskárny · Přístupové body
+
+---
+layout: default
+---
+
+# 8.20 Přístup k síti
+
+- Síť je rozdělena do **bezpečnostních zón**
+  - Host · DMZ · ICS/IoT/SCADA
+- Kritické systémy jsou:
+  - Izolovány
+  - Chráněny přísnějšími pravidly
+- **Autentizace na úrovni zařízení** pro přístup k síti
+
+---
+layout: default
+---
+
+# 8.20 Vzdálený a bezdrátový přístup
+
+**Vzdálený přístup (VPN)**
+- Vícefaktorová autentizace (MFA) a další bezpečnostní kroky
+- Šifrování
 
 **Wi-Fi**
-- Separate networks for employees and guests
-- Access verification
+- Oddělené sítě pro zaměstnance a hosty
+- Ověřování přístupu
 
 ---
 layout: default
 ---
 
-# 8.20 Logging and Monitoring
+# 8.20 Logování a monitoring
 
-Key network events must be:
-- **Logged**
-- **Monitored**
+Klíčové síťové události musí být:
+- **Zaznamenávány**
+- **Monitorovány**
 
-The organisation must be able to:
-- Detect suspicious traffic
-- Investigate incidents
+Organizace musí být schopna:
+- Detekovat podezřelý provoz
+- Vyšetřovat incidenty
 
 ---
 layout: default
 ---
 
-# 8.20 Cloud vs On-Premise
+# 8.20 Cloud vs. On-Premise
 
 <div class="icon-grid cols-2">
   <div class="icon-card">
     <div class="icon">☁️</div>
-    <div class="label"><strong>Cloud</strong><br/>Same security principles apply — cloud ≠ exception to security</div>
+    <div class="label"><strong>Cloud</strong><br/>Stejné bezpečnostní principy platí — cloud není výjimkou z bezpečnosti</div>
   </div>
   <div class="icon-card">
     <div class="icon">🏢</div>
-    <div class="label"><strong>On-Premise</strong><br/>Controls defined and documented, regularly reviewed</div>
+    <div class="label"><strong>On-Premise</strong><br/>Opatření jsou definována a dokumentována, pravidelně revidována</div>
   </div>
 </div>
 
 <div class="callout warning">
-Cloud is not an exemption from security requirements.
+Cloud není výjimkou z bezpečnostních požadavků.
 </div>
 
 ---
 layout: default
 ---
 
-# 8.20 Change Management
+# 8.20 Správa změn
 
-Network changes must go through:
-- **Change management process**
-- Approval workflow
-- Rules are **regularly reviewed**
+Síťové změny musí procházet:
+- **Procesem správy změn**
+- Schvalovacím postupem
+- Pravidla jsou **pravidelně revidována**
 
 ---
 layout: default
@@ -117,39 +117,39 @@ layout: default
 
 # 8.20 Audit
 
-The organisation must be able to demonstrate:
+Organizace musí být schopna prokázat:
 
-- Configurations
-- Network diagrams
-- Logs
-- Change records
+- Konfigurace
+- Síťové diagramy
+- Logy
+- Záznamy o změnách
 
-Security must be **provable and sustainable**.
-
----
-layout: default
----
-
-# 8.20 Metrics
-
-| Metric | Description |
-|--------|-------------|
-| Device status | How many are up-to-date |
-| Logins | Successful vs failed authentication |
-| Packet loss | Network health indicator |
-| Connected devices | Wired / wireless / guest network count |
+Bezpečnost musí být **prokazatelná a udržitelná**.
 
 ---
 layout: default
 ---
 
-# 8.20 Common Problems
+# 8.20 Metriky
+
+| Metrika | Popis |
+|---------|-------|
+| Stav zařízení | Kolik je aktuálních |
+| Přihlášení | Úspěšná vs. neúspěšná autentizace |
+| Ztráta paketů | Indikátor zdraví sítě |
+| Připojená zařízení | Počet kabelových / bezdrátových / hostovských |
+
+---
+layout: default
+---
+
+# 8.20 Časté problémy
 
 <div class="callout warning">
-Cloud is often left unmanaged — default settings in place, nobody monitoring
+Cloud je často ponechán bez správy — výchozí nastavení ponechána, nikdo nemonitoruje
 </div>
 
-- Nobody monitoring network activity
-- Management interfaces exposed to the internet
-- Weak or missing authentication
-- Impossible to trace which device caused an incident
+- Nikdo nemonitoruje síťový provoz
+- Správcovská rozhraní jsou dostupná z internetu
+- Slabá nebo chybějící autentizace
+- Nelze dohledat, které zařízení způsobilo incident

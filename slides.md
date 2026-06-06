@@ -1,6 +1,6 @@
 ---
 theme: ./theme
-title: Systems and Network Security
+title: Bezpečnost systémů a sítí
 info: ISO 27001 — 8.7, 8.20, 8.21, 8.22, 8.23, 8.32, PAM, Segregation
 author: Ondřej Šrámek
 date: January 2025
@@ -15,11 +15,11 @@ fonts:
 
 ---
 layout: cover
-subtitle: Digital Academy — Cybersecurity
+subtitle: Specialistka informační bezpečnosti
 author: Ondřej Šrámek
 date: January 2025
 ---
-# Systems and Network Security
+# Bezpečnost systémů a sítí
 
 ---
 layout: bio

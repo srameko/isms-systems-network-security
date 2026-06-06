@@ -1,38 +1,38 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.31
+subtitle: ISO 27001 — Opatření 8.31
 ---
 
-# Separation of Development, Test, and Production
+# Oddělení vývojového, testovacího a produkčního prostředí
 
 ---
 layout: default
 ---
 
-# 8.31 Motivation
+# 8.31 Motivace
 
 <div class="callout">
-Key control for operational stability and security — ensures that errors in development and test do not threaten production.
+Klíčové opatření pro provozní stabilitu a bezpečnost — zajišťuje, aby chyby ve vývoji a testech neohrožovaly produkci.
 </div>
 
-- Protection of production data and systems
-- Reduction of risk of errors and incidents
-- **Crown jewels** (production data and systems) remain protected
+- Ochrana produkčních dat a systémů
+- Snížení rizika chyb a incidentů
+- **Klenoty koruny** (produkční data a systémy) zůstávají chráněny
 
 ---
 layout: default
 ---
 
-# 8.31 Why It Matters
+# 8.31 Proč na tom záleží
 
 <div class="icon-grid cols-2">
   <div class="icon-card">
     <div class="icon">❌</div>
-    <div class="label"><strong>Without separation</strong><br/>Test code in production · Unauthorised changes · Data leakage or misuse</div>
+    <div class="label"><strong>Bez oddělení</strong><br/>Testovací kód v produkci · Neoprávněné změny · Únik nebo zneužití dat</div>
   </div>
   <div class="icon-card">
     <div class="icon">✅</div>
-    <div class="label"><strong>With separation</strong><br/>Controlled changes · Lower risk of outages · Clear accountability</div>
+    <div class="label"><strong>S oddělením</strong><br/>Řízené změny · Nižší riziko výpadků · Jasná odpovědnost</div>
   </div>
 </div>
 
@@ -40,63 +40,63 @@ layout: default
 layout: default
 ---
 
-# 8.31 Typical Environments
+# 8.31 Typická prostředí
 
-| Environment | Purpose | Data |
-|-------------|---------|------|
-| **Development** | Code writing and modifications | Anonymised/masked |
-| **Test / QA** | Functional and security testing, change verification | Anonymised/masked |
-| **Production** | Live operation, real users | Real data |
+| Prostředí | Účel | Data |
+|-----------|------|------|
+| **Vývoj** | Psaní a úpravy kódu | Anonymizovaná/maskovaná |
+| **Test / QA** | Funkční a bezpečnostní testování, ověřování změn | Anonymizovaná/maskovaná |
+| **Produkce** | Živý provoz, skuteční uživatelé | Skutečná data |
 
-Each environment has **different rules and permissions**.
-
----
-layout: default
----
-
-# 8.31 How It Works
-
-**Dedicated per environment:**
-- Systems / servers
-- Access rights
-- Networks (see 8.22)
-
-**No direct development or testing in production**
-
-**Moving to production:**
-- Only through an approved process (**Change Management**)
-- Minimum number of people with PROD access (**PAM**)
+Každé prostředí má **jiná pravidla a oprávnění**.
 
 ---
 layout: default
 ---
 
-# 8.31 Data Handling
+# 8.31 Jak to funguje
+
+**Dedikované pro každé prostředí:**
+- Systémy / servery
+- Přístupová práva
+- Sítě (viz 8.22)
+
+**Žádný přímý vývoj ani testování v produkci**
+
+**Přesun do produkce:**
+- Pouze přes schválený proces (**Správa změn**)
+- Minimální počet osob s přístupem k PROD (**PAM**)
+
+---
+layout: default
+---
+
+# 8.31 Práce s daty
 
 <div class="callout warning">
-Production data must never be used in development or test environments.
+Produkční data nesmí být nikdy použita ve vývojovém ani testovacím prostředí.
 </div>
 
-**Development / Test environments use:**
-- Anonymised data
-- Masked data
-- Synthetic data
+**Vývojová / testovací prostředí používají:**
+- Anonymizovaná data
+- Maskovaná data
+- Syntetická data
 
-**Why it matters:**
-- Protection of personal and sensitive data
-- Compliance with **GDPR** and **ISO 27001**
+**Proč na tom záleží:**
+- Ochrana osobních a citlivých dat
+- Soulad s **GDPR** a **ISO 27001**
 
 ---
 layout: default
 ---
 
-# 8.31 Common Problems
+# 8.31 Časté problémy
 
 <div class="callout warning">
-Secrets (tokens, API keys…) appearing in public repositories (GitHub/GitLab/Bitbucket) is a critical and frequent incident
+Tajné informace (tokeny, API klíče…) ve veřejných repozitářích (GitHub/GitLab/Bitbucket) jsou kritickým a častým incidentem
 </div>
 
-- Dev/test server accessible from the internet
-- Poor security posture (weak or no password, missing patches)
-- **Secrets in public repos** — tokens, API keys, credentials
-- **Production data where it shouldn't be**
+- Dev/testovací server dostupný z internetu
+- Špatná bezpečnostní konfigurace (slabé nebo žádné heslo, chybějící záplaty)
+- **Tajné informace ve veřejných repozitářích** — tokeny, API klíče, přihlašovací údaje
+- **Produkční data tam, kde by neměla být**

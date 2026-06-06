@@ -1,79 +1,79 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.2
+subtitle: ISO 27001 — Opatření 8.2
 ---
 
-# PAM / PIM — Privileged Access Management
-
----
-layout: default
----
-
-# 8.2 Privileged Access Rights / Management
-
-Privileged accounts represent the **highest risk** if compromised.
-
-Control 8.2 ensures they are strictly managed, monitored, and used only when necessary.
-
-**In scope:**
-- Administrator and system accounts
-- Accounts enabling:
-  - Configuration changes
-  - Software installation
-  - User management
-  - Access to sensitive data
+# PAM / PIM — Správa privilegovaného přístupu
 
 ---
 layout: default
 ---
 
-# 8.2 Privileged Access Rights
+# 8.2 Privilegovaná přístupová práva / správa
 
-Goal: ensure privileged access rights (admin, root, enterprise admin) are granted, used, and managed in a **controlled manner** — reducing the risk of misuse or compromise.
+Privilegované účty představují **nejvyšší riziko** v případě kompromitace.
+
+Opatření 8.2 zajišťuje, že jsou přísně spravovány, monitorovány a používány pouze tehdy, je-li to nezbytné.
+
+**V rozsahu:**
+- Administrátorské a systémové účty
+- Účty umožňující:
+  - Změny konfigurace
+  - Instalaci softwaru
+  - Správu uživatelů
+  - Přístup k citlivým datům
+
+---
+layout: default
+---
+
+# 8.2 Privilegovaná přístupová práva
+
+Cíl: zajistit, aby privilegovaná přístupová práva (admin, root, enterprise admin) byla udělována, používána a spravována **řízeným způsobem** — snižujícím riziko zneužití nebo kompromitace.
 
 <div class="callout">
-In practice, commercial PAM software is typically used: <strong>CyberArk, BeyondTrust</strong> and similar solutions.
+V praxi se typicky používá komerční software PAM: <strong>CyberArk, BeyondTrust</strong> a podobná řešení.
 </div>
 
 ---
 layout: default
 ---
 
-# 8.2 PAM — Core Principles
+# 8.2 PAM — Základní principy
 
-**Least Privilege**
+**Nejnižší oprávnění (Least Privilege)**
 
-- Privileged access only for **authorised persons**
-- Only for the **minimum necessary time** (request/time-boxed)
+- Privilegovaný přístup pouze pro **oprávněné osoby**
+- Pouze po **minimálně nutnou dobu** (na vyžádání / časově omezený)
 
-**Account Separation**
+**Oddělení účtů**
 
-- Regular user accounts
-- Administrator accounts
-- In practice: multiple permission tiers (R, RW…)
+- Běžné uživatelské účty
+- Administrátorské účty
+- V praxi: více úrovní oprávnění (R, RW…)
 
 ---
 layout: default
 ---
 
-# 8.2 PAM — Key Requirements
+# 8.2 PAM — Klíčové požadavky
 
 <div class="icon-grid">
   <div class="icon-card">
     <div class="icon">📋</div>
-    <div class="label">Formal process for approval, changes, and revocation</div>
+    <div class="label">Formální proces pro schvalování, změny a odvolání</div>
   </div>
   <div class="icon-card">
     <div class="icon">📅</div>
-    <div class="label">Evidence and regular access review (typically annual)</div>
+    <div class="label">Evidence a pravidelná revize přístupů (typicky roční)</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔑</div>
-    <div class="label">MFA (Passkeys, Push notifications…)</div>
+    <div class="label">MFA (Passkeys, Push notifikace…)</div>
   </div>
   <div class="icon-card">
     <div class="icon">📝</div>
-    <div class="label">Logging and monitoring of all privileged activity</div>
+    <div class="label">Logování a monitoring veškeré privilegované aktivity</div>
   </div>
 </div>
 
@@ -81,61 +81,61 @@ layout: default
 layout: default
 ---
 
-# 8.2 PAM — Roles and Responsibilities
+# 8.2 PAM — Role a odpovědnosti
 
-| Role | Responsibility |
-|------|---------------|
-| **Management** | Approves policies and exceptions |
-| **Security** | Controls and audits privileged accounts |
-| **IAM** | Manages privileged accounts |
-| **Users** | Responsible for safe use of their access |
+| Role | Odpovědnost |
+|------|-------------|
+| **Vedení** | Schvaluje politiky a výjimky |
+| **Bezpečnost** | Kontroluje a audituje privilegované účty |
+| **IAM** | Spravuje privilegované účty |
+| **Uživatelé** | Odpovídají za bezpečné používání svého přístupu |
 
 ---
 layout: default
 ---
 
-# 8.2 Do Nots
+# 8.2 Co nedělat
 
-**Common Examples**
+**Typické příklady**
 
 <div class="callout warning">
-Forgotten or unrecorded accounts with admin access (including Shadow IT)
+Zapomenuté nebo nezaznamenané účty s administrátorským přístupem (včetně Shadow IT)
 </div>
 
-- No logging or monitoring
-- No MFA
-- Sharing credentials for generic accounts like `admin42@org.cz`
-- Weak passwords
+- Žádné logování ani monitoring
+- Žádné MFA
+- Sdílení přihlašovacích údajů pro generické účty jako `admin42@org.cz`
+- Slabá hesla
 
-**Resulting Risks**
+**Výsledná rizika**
 
-- Data loss
-- Integrity compromise
-- Availability disruption
-
----
-layout: default
----
-
-# PAM — Summary
-
-**Privileged Access Management** covers:
-
-- Management and security of privileged accounts (admin, root, service accounts)
-- Restricting access according to **least privilege**
-- **Just-In-Time (JIT)** temporary privilege elevation
-- Separation of regular and administrator accounts
-- Strong authentication (**MFA**) for privileged access
-- **Central password vault** (no account sharing)
-- **Logging, monitoring, and session recording**
+- Ztráta dat
+- Narušení integrity
+- Narušení dostupnosti
 
 ---
 layout: default
 ---
 
-# 8.2 Common Problems
+# PAM — Shrnutí
 
-- Regular users have **local administrator rights**
-- Administrators log in directly on endpoints (locally)
-- Anyone who asks gets what they want — no approval process
-- Services run under a **user account** instead of a dedicated service account
+**Správa privilegovaného přístupu** zahrnuje:
+
+- Správu a zabezpečení privilegovaných účtů (admin, root, servisní účty)
+- Omezení přístupu dle principu **nejnižších oprávnění**
+- **Just-In-Time (JIT)** dočasné zvýšení oprávnění
+- Oddělení běžných a administrátorských účtů
+- Silná autentizace (**MFA**) pro privilegovaný přístup
+- **Centrální trezor hesel** (žádné sdílení účtů)
+- **Logování, monitoring a nahrávání relací**
+
+---
+layout: default
+---
+
+# 8.2 Časté problémy
+
+- Běžní uživatelé mají **práva lokálního administrátora**
+- Administrátoři se přihlašují přímo na koncových stanicích (lokálně)
+- Kdokoli, kdo požádá, dostane co chce — žádný schvalovací proces
+- Služby běží pod **uživatelským účtem** místo dedikovaného servisního účtu

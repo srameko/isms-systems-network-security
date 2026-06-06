@@ -1,134 +1,134 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.22
+subtitle: ISO 27001 — Opatření 8.22
 ---
 
-# Segregation of Networks
-
----
-layout: default
----
-
-# 8.22 Segregation of Networks
-
-Ensures the network is **not one flat entity**, but a managed system of security zones that prevent the spread of attacks and reduce incident impact.
-
-- Controlled division of the network into zones/segments
-- Each zone has:
-  - A different **trust level**
-  - Different **communication rules**
-- Goal: **limit lateral movement** and contain blast radius
+# Segmentace sítí
 
 ---
 layout: default
 ---
 
-# 8.22 Why Segmentation?
+# 8.22 Segmentace sítí
+
+Zajišťuje, že síť **není jedním plochým celkem**, ale řízeným systémem bezpečnostních zón, které brání šíření útoků a snižují dopad incidentů.
+
+- Řízené rozdělení sítě do zón/segmentů
+- Každá zóna má:
+  - Jinou **úroveň důvěry**
+  - Jiná **pravidla komunikace**
+- Cíl: **omezit laterální pohyb** a rozsah dopadu
+
+---
+layout: default
+---
+
+# 8.22 Proč segmentace?
 
 <div class="icon-grid cols-2">
   <div class="icon-card">
     <div class="icon">❌</div>
-    <div class="label"><strong>Without segmentation</strong><br/>Compromising one device can threaten the entire network</div>
+    <div class="label"><strong>Bez segmentace</strong><br/>Kompromitace jednoho zařízení může ohrozit celou síť</div>
   </div>
   <div class="icon-card">
     <div class="icon">✅</div>
-    <div class="label"><strong>With segmentation</strong><br/>Attacker has a limited scope of action · Logical containment</div>
+    <div class="label"><strong>Se segmentací</strong><br/>Útočník má omezený prostor pro pohyb · Logické omezení dopadu</div>
   </div>
 </div>
 
-**Protects against:**
-- Lateral movement
-- Internal threats
+**Ochrana proti:**
+- Laterálnímu pohybu
+- Interním hrozbám
 
 ---
 layout: default
 ---
 
-# 8.22 Typical Segments
+# 8.22 Typické segmenty
 
-| Zone | Purpose |
-|------|---------|
-| **User network** | Workstations |
-| **Server zone** | Internal services |
-| **Management network** | Infrastructure administration |
-| **VPN** | External access |
-| **DMZ** | Public-facing services |
-| **Guest (WiFi)** | Visitor access |
-| **OT / ICS / IoT** | Industrial / production systems |
+| Zóna | Účel |
+|------|------|
+| **Uživatelská síť** | Pracovní stanice |
+| **Serverová zóna** | Interní služby |
+| **Správcovská síť** | Správa infrastruktury |
+| **VPN** | Vzdálený přístup |
+| **DMZ** | Veřejně dostupné služby |
+| **Host (WiFi)** | Přístup pro návštěvníky |
+| **OT / ICS / IoT** | Průmyslové / výrobní systémy |
 
 ---
 layout: default
 ---
 
-# 8.22 Technical Controls
+# 8.22 Technická opatření
 
-- **VLAN and routing**
-- **Firewall types:**
-  - Application (externally accessible services)
-  - Perimeter (hides the whole network from outside)
-  - Host-based (every device must have firewall enabled)
-  - Global (cloud)
+- **VLAN a směrování**
+- **Typy firewallů:**
+  - Aplikační (veřejně dostupné služby)
+  - Perimetrální (skrývá celou síť před vnějškem)
+  - Hostitelský (každé zařízení musí mít zapnutý firewall)
+  - Globální (cloud)
 - **ACL** (Access Control Lists)
-- **Microsegmentation** — virtualisation/cloud, down to NIC level
+- **Mikrosegmentace** — virtualizace/cloud, až na úroveň NIC
 
 ---
 layout: default
 ---
 
-# 8.22 Basic Rules
+# 8.22 Základní pravidla
 
 <div class="callout">
-<strong>Default Deny</strong> — what is not explicitly allowed is forbidden
+<strong>Výchozí zamítnutí (Default Deny)</strong> — co není explicitně povoleno, je zakázáno
 </div>
 
-Allow only:
-- Ports/services **strictly necessary** for operation
-- **Specific sources and destinations**
+Povolujte pouze:
+- Porty/služby **nezbytně nutné** pro provoz
+- **Konkrétní zdroje a cíle**
 
-**Regular rule review** — dead rules accumulate fast
+**Pravidelná revize pravidel** — neaktuální pravidla se rychle hromadí
 
 ---
 layout: default
 ---
 
-# 8.22 Common Problems
+# 8.22 Časté problémy
 
 <div class="callout warning">
-Flat networks are still extremely common — even in organisations that "have a firewall"
+Ploché sítě jsou stále velmi běžné — i v organizacích, které „mají firewall"
 </div>
 
-- No segmentation at all
-- **Default allow** policies
-- Missing or misconfigured firewalls
-- Admin relies on a central firewall — but cloud workloads may not be behind it
-- No guest network
-- Servers and clients in the same subnet
-- **No MFA for remote access** (VPN / RDP / SSH)
+- Žádná segmentace vůbec
+- Zásady **výchozího povolení**
+- Chybějící nebo chybně nakonfigurované firewally
+- Správce spoléhá na centrální firewall — cloudové zátěže ale nemusí být za ním
+- Žádná hostovská síť
+- Servery a klienti ve stejné podsíti
+- **Žádné MFA pro vzdálený přístup** (VPN / RDP / SSH)
 
 ---
 layout: center
 ---
 
-# 🛠️ Group Exercise — 20 min
+# 🛠️ Skupinové cvičení — 20 min
 
 <div class="callout">
-Imagine our fictional organisation: a bakery.
+Představte si naši fiktivní organizaci: pekárnu.
 </div>
 
-**Breakout Rooms — discuss:**
+**Breakout Rooms — diskutujte:**
 
-1. Describe the individual network segments (DMZ, WiFi, OT…)
-2. Who can communicate with whom? And why?
-3. What additional security controls could be used (FW, WAF, Proxy, IDS…) and where?
+1. Popište jednotlivé síťové segmenty (DMZ, WiFi, OT…)
+2. Kdo může komunikovat s kým? A proč?
+3. Jaká další bezpečnostní opatření by bylo možné použít (FW, WAF, Proxy, IDS…) a kde?
 
-*(Network diagram on the next slide)*
+*(Síťový diagram na dalším slidu)*
 
 ---
 layout: center
 ---
 
-# 🏗️ Task: Network Security Architecture
+# 🏗️ Úkol: Architektura síťové bezpečnosti
 
 **Breakout Rooms**
 
-Design the network security architecture for the bakery organisation.
+Navrhněte architekturu síťové bezpečnosti pro organizaci pekárny.

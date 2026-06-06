@@ -1,66 +1,66 @@
 ---
 layout: section
-subtitle: ISO 27001 — Control 8.21
+subtitle: ISO 27001 — Opatření 8.21
 ---
 
-# Security of Network Services
+# Bezpečnost síťových služeb
 
 ---
 layout: default
 ---
 
-# 8.21 Motivation
+# 8.21 Motivace
 
-Network service security means ensuring that networks you depend on are **securely specified, delivered, and continuously monitored**.
+Bezpečnost síťových služeb znamená zajistit, aby sítě, na nichž závisíte, byly **bezpečně specifikovány, poskytovány a průběžně monitorovány**.
 
-You must rely on:
-- Internet Service Provider (ISP)
-- Cloud provider
-- Managed Security Service Provider
-- Or a combination
+Musíte se spoléhat na:
+- Poskytovatele internetového připojení (ISP)
+- Poskytovatele cloudu
+- Poskytovatele řízené bezpečnosti (MSSP)
+- Nebo jejich kombinaci
 
 <div class="callout warning">
-If these network services are not properly secured and managed, you are essentially handing all your information to a third party.
+Pokud tyto síťové služby nejsou řádně zabezpečeny a spravovány, v podstatě předáváte veškeré své informace třetí straně.
 </div>
 
 ---
 layout: default
 ---
 
-# 8.21 Documentation and SLAs
+# 8.21 Dokumentace a SLA
 
-- The organisation maintains an **up-to-date inventory** of all key network services (internal and external) and their purpose
-- Security requirements (CIA, logging) are defined **upfront** for network services
-- Contracts and SLAs with providers contain:
-  - Clear security obligations
-  - Defined SLAs
-  - Incident response procedures
-- Documented **access rules** (who has access to what, how, and under what conditions)
+- Organizace udržuje **aktuální inventář** všech klíčových síťových služeb (interních i externích) a jejich účelu
+- Bezpečnostní požadavky (CIA, logování) jsou definovány **předem** pro síťové služby
+- Smlouvy a SLA s poskytovateli obsahují:
+  - Jasné bezpečnostní závazky
+  - Definovaná SLA
+  - Postupy pro reakci na incidenty
+- Dokumentovaná **pravidla přístupu** (kdo má přístup k čemu, jak a za jakých podmínek)
 
 ---
 layout: default
 ---
 
-# 8.21 Security and Logging
+# 8.21 Bezpečnost a logování
 
-**Technical controls implemented:**
+**Implementovaná technická opatření:**
 
 <div class="icon-grid">
   <div class="icon-card">
     <div class="icon">🔒</div>
-    <div class="label">Encryption</div>
+    <div class="label">Šifrování</div>
   </div>
   <div class="icon-card">
     <div class="icon">🧱</div>
-    <div class="label">Firewalls</div>
+    <div class="label">Firewally</div>
   </div>
   <div class="icon-card">
     <div class="icon">🗂️</div>
-    <div class="label">Network Segmentation</div>
+    <div class="label">Síťová segmentace</div>
   </div>
   <div class="icon-card">
     <div class="icon">⚙️</div>
-    <div class="label">Secure Configurations</div>
+    <div class="label">Bezpečné konfigurace</div>
   </div>
   <div class="icon-card">
     <div class="icon">🔑</div>
@@ -68,51 +68,51 @@ layout: default
   </div>
 </div>
 
-Usage and management of network services must be **logged and monitored** with alerts on suspicious activity.
+Využívání a správa síťových služeb musí být **zaznamenávány a monitorovány** s upozorněními na podezřelou aktivitu.
 
 ---
 layout: default
 ---
 
-# 8.21 Testing, BCP & DR, and Training
+# 8.21 Testování, BCP & DR a školení
 
-- Network services subject to **security testing** and regular reviews (including post-change reviews)
-- Resilience (redundancy, failover) designed and linked with **BCP/DR**
-- Administrators and relevant staff trained in **secure management** and use of network services
-
----
-layout: default
----
-
-# 8.21 Metrics
-
-| Area | Metric |
-|------|--------|
-| Hosting | Web presence availability |
-| Uplink | ISP connectivity |
-| Datacenter | External DC and its services |
-| Services | Availability of services (inbound and outbound) |
-| Logging | Volume of logs collected |
-| Traffic patterns | Periodicity (weekends, holidays, Black Friday…) |
+- Síťové služby podléhají **bezpečnostnímu testování** a pravidelným revizím (včetně revizí po změnách)
+- Odolnost (redundance, failover) je navržena a propojena s **BCP/DR**
+- Správci a relevantní zaměstnanci jsou školeni v **bezpečné správě** a používání síťových služeb
 
 ---
 layout: default
 ---
 
-# 8.21 Common Problems
+# 8.21 Metriky
+
+| Oblast | Metrika |
+|--------|---------|
+| Hosting | Dostupnost webové prezentace |
+| Uplink | Konektivita ISP |
+| Datové centrum | Externí DC a jeho služby |
+| Služby | Dostupnost služeb (příchozí i odchozí) |
+| Logování | Objem shromážděných logů |
+| Vzory provozu | Periodicita (víkendy, svátky, Black Friday…) |
+
+---
+layout: default
+---
+
+# 8.21 Časté problémy
 
 <div class="callout warning">
-Missing connectivity/hosting redundancy is the most common failure point
+Chybějící redundance konektivity/hostingu je nejčastější bod selhání
 </div>
 
-- No redundancy for connectivity / hosting / VPS / datacenter
-- **Unused ISP capabilities**: DDoS protection, RTBH
-- Insufficient contract specification with providers
-  - Missing service definitions
-  - Weak or absent SLAs
+- Žádná redundance pro konektivitu / hosting / VPS / datové centrum
+- **Nevyužité možnosti ISP**: ochrana proti DDoS, RTBH
+- Nedostatečná smluvní specifikace s poskytovateli
+  - Chybějící definice služeb
+  - Slabá nebo chybějící SLA
 
 ---
 layout: center
 ---
 
-# ☕ Break
+# ☕ Přestávka
