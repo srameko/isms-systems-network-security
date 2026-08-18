@@ -27,14 +27,6 @@ layout: default
     <div class="icon">🔄</div>
     <div class="label">Správa změn předchází samovolným výpadkům</div>
   </div>
-  <div class="icon-card">
-    <div class="icon">🔑</div>
-    <div class="label">PAM — nejnižší oprávnění, JIT, MFA, nahrávání relací</div>
-  </div>
-  <div class="icon-card">
-    <div class="icon">🏗️</div>
-    <div class="label">Oddělujte dev/test/prod — zejména co se týče dat</div>
-  </div>
 </div>
 
 ---
@@ -59,10 +51,10 @@ layout: default
 
 | Téma | Zdroj |
 |------|-------|
-| AV vs EDR | Jaký je rozdíl mezi AV a EDR? |
-| JIT elevation | Just-in-time elevation v CyberArk (PAM) |
-| Zero Trust | Zero Trust z pohledu ZScaler |
-| Webové filtrování | URL/Web filtering z pohledu ZScaler |
+| AV vs EDR | [Jaký je rozdíl mezi AV a EDR?](https://www.youtube.com/watch?v=2fjIfZ48cCo) |
+| JIT elevation | [Just-in-time elevation v CyberArk (PAM)](https://www.youtube.com/watch?v=A59lYRy8sC8) |
+| Zero Trust | [Zero Trust z pohledu ZScaler](https://www.youtube.com/watch?v=P1GSmZTXGhw) |
+| Webové filtrování | [URL/Web filtering z pohledu ZScaler](https://www.youtube.com/watch?v=qSbBBy5VOVw) |
 
 ---
 layout: center
@@ -81,6 +73,6 @@ layout: center
 
 Ondřej Šrámek
 
-**Czechitas · Specialistka informační bezpečnosti · January 2026**
+**Czechitas · Specialistka informační bezpečnosti · Srpen 2026**
 
 [linktr.ee/ondrejsramek](https://linktr.ee/ondrejsramek)

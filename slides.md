@@ -1,7 +1,7 @@
 ---
 theme: ./theme
 title: Bezpečnost systémů a sítí
-info: ISO 27001 — 8.7, 8.20, 8.21, 8.22, 8.23, 8.32, PAM, Segregation
+info: ISO 27001 — 8.7, 8.20, 8.21, 8.22, 8.23, 8.32
 author: Ondřej Šrámek
 date: 2026
 mdc: true
@@ -58,14 +58,6 @@ src: ./slides/06-web-filtering.md
 
 ---
 src: ./slides/07-change-management.md
----
-
----
-src: ./slides/08-pam.md
----
-
----
-src: ./slides/09-dev-test-prod.md
 ---
 
 ---

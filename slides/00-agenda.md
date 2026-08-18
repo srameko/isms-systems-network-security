@@ -30,14 +30,6 @@ layout: default
     <div class="label">8.32 Správa změn</div>
   </div>
   <div class="icon-card">
-    <div class="icon">🔑</div>
-    <div class="label">PAM / PIM</div>
-  </div>
-  <div class="icon-card">
-    <div class="icon">🏗️</div>
-    <div class="label">Oddělení vývojového, testovacího a produkčního prostředí</div>
-  </div>
-  <div class="icon-card">
     <div class="icon">💬</div>
     <div class="label">Otázky a diskuse</div>
   </div>
