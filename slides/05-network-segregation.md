@@ -126,7 +126,7 @@ Představte si naši fiktivní organizaci: pekárnu.
 ---
 layout: image
 image: /network-architecture.png
-backgroundSize: contain
+backgroundSize: auto 72%
 ---
 
 <h1 class="task-title">🏗️ Úkol: Architektura síťové bezpečnosti</h1>
