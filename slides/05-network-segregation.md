@@ -124,11 +124,20 @@ Představte si naši fiktivní organizaci: pekárnu.
 *(Síťový diagram na dalším slidu)*
 
 ---
-layout: center
+layout: image
+image: /network-architecture.png
+backgroundSize: contain
 ---
 
-# 🏗️ Úkol: Architektura síťové bezpečnosti
+<h1 class="task-title">🏗️ Úkol: Architektura síťové bezpečnosti</h1>
 
-**Breakout Rooms**
-
-Navrhněte architekturu síťové bezpečnosti pro organizaci pekárny.
+<style scoped>
+.task-title {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  padding: 0.4em 0.8em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5em;
+}
+</style>
