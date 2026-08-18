@@ -132,6 +132,9 @@ backgroundSize: auto 72%
 <h1 class="task-title">🏗️ Úkol: Architektura síťové bezpečnosti</h1>
 
 <style scoped>
+.slidev-layout {
+  background-position: center 80% !important;
+}
 .task-title {
   position: absolute;
   top: 1.25rem;
